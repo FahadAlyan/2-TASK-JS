@@ -2,7 +2,7 @@ function convertToSeconds() {
   const hoursInput = document.getElementById("hours").value;
   const hours = Number(hoursInput);
 
-  if (!hoursInput || isNaN(hours) || hours < 0) {
+  if (!hoursInput ||hours < 0) { 
     document.getElementById("result").innerText = "Please enter a valid hours!";
     return;
   }

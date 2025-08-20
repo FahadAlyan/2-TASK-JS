@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  background: linear-gradient(135deg, #983e41, #fad0c4);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@ body {
 }
 
 label {
-  font-size: 16px;
+  font-size: 20px;
   color: #333;
   display: block;
   margin-bottom: 10px;
@@ -33,7 +33,7 @@ label {
 input[type="number"] {
   padding: 10px;
   width: 90%;
-  border: 2px solid #d63384;
+  border: 2px solid #571335;
   border-radius: 8px;
   outline: none;
   font-size: 16px;
@@ -42,12 +42,12 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-  border-color: #ff9a9e;
+  border-color: #571335;
   box-shadow: 0px 0px 8px rgba(214, 51, 132, 0.5);
 }
 
 button {
-  background: #d63384;
+  background: #602424;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -58,7 +58,7 @@ button {
 }
 
 button:hover {
-  background: #b02a6f;
+  background: #c26696;
   transform: scale(1.05);
 }
 

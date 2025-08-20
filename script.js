@@ -9,7 +9,7 @@ function convertToSeconds() {
 
   const seconds = hours * 3600;
   document.getElementById("result").innerText =
-   + hours + " hour(s) = " + seconds + " seconds";
+   + hours + " hours = " + seconds + " seconds";
 
 
 }

@@ -3,23 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hours to Seconds Converter</title>
+  <title>Converters</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>Converters</h1>
 
-  <div class="container">
-    <h2> Hours to Seconds Converter</h2>
-
-    <label for="hours">Enter hours:</label>
-    <input type="number" id="hours" placeholder="Enter hours">
-
-    <button onclick="convertToSeconds()">Convert</button>
-
-    <h3 id="result"></h3>
-
+  <!-- Task 1: Age to Days -->
+  <div class="box">
+    <h2>Age → Days Converter</h2>
+    <label for="age">Enter your age (in years):</label>
+    <input type="number" id="age" placeholder="Enter age">
+    <button onclick="convertToDays()">Convert</button>
+    <p id="ageResult"></p>
   </div>
 
+  <!-- Task 2: Hours to Seconds -->
+  <div class="box">
+    <h2>Hours → Seconds Converter</h2>
+    <label for="hours">Enter hours:</label>
+    <input type="number" id="hours" placeholder="Enter hours">
+    <button onclick="convertToSeconds()">Convert</button>
+    <p id="hoursResult"></p>
+  </div>
+
+  <h3>Next Number Finder</h3>
+
+<!-- Task 3 : scenorio 1-->
+  <div class="box">
+    <h2> Next Number in Array</h2>
+    <p>Array = [10, 20, 30, 40, 50]</p>
+    <label for="arrayInput">Enter a number from array:</label>
+    <input type="number" id="arrayInput" placeholder="Enter a number from array">
+    <button onclick="checkArray()">Find Next</button>
+    <p id="arrayResult"></p>
+  </div>
+<!-- Task 4: Next Number (Integer or Float) -->
+  <div class="box">
+  <h2> Next Number (Integer or Float)</h2>
+  <label for="userInput">Enter any number (integer or float):</label>
+  <input type="number" id="userInput" placeholder="Enter a number">
+  <button onclick="checkUser()">Find Next</button>
+  <p id="userResult"></p>
+</div>
+
+<!-- Task 5: Capitalize Name -->
+  <div class="box">
+    <h2>Task 5: Capitalize Name</h2>
+    <label for="nameInput">Enter your name (lowercase only):</label>
+    <input type="text" id="nameInput" placeholder="Enter name">
+    <button onclick="capitalizeName()">Capitalize</button>
+    <p id="nameResult"></p>
+  </div>
+
+  <!-- Task 6: BMI Calculator -->
+<div class="box">
+  <h2>Task 6: BMI Calculator</h2>
+  <label for="weight">Enter your weight (kg):</label>
+  <input type="number" id="weight" placeholder="Enter weight">
+
+  <label for="height">Enter your height (meters):</label>
+  <input type="number" id="height" step="0.01" placeholder="Enter height">
+
+  <button onclick="calculateBMI()">Calculate BMI</button>
+  <p id="bmiResult"></p>
+</div>
+
+
+
+  
   <script src="script.js"></script>
 </body>
 </html>
+

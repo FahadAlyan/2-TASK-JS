@@ -2,25 +2,32 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #983e41, #fad0c4);
-  height: 100vh;
+  background: linear-gradient(135deg, #0c0a0b, #c08eb7);
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 20px;
 }
 
-.container {
-  background: white;
-  padding: 29px;
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.box {
+  background: #e0d3d3;
+  padding: 20px;
+  margin: 15px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
   width: 350px;
 }
 
-.container h2 {
-  color: #582940;
-  margin-bottom: 20px;
+.box h2 {
+  color: #6f111e;
+  margin-bottom: 15px;
 }
 
 label {
@@ -33,7 +40,7 @@ label {
 input[type="number"] {
   padding: 10px;
   width: 90%;
-  border: 2px solid #571335;
+  border: 2px solid #5b1e0a;
   border-radius: 8px;
   outline: none;
   font-size: 16px;
@@ -42,15 +49,15 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-  border-color: #571335;
-  box-shadow: 0px 0px 8px rgba(214, 51, 132, 0.5);
+  border-color: #6a11cb;
+  box-shadow: 0px 0px 8px rgba(106, 17, 203, 0.5);
 }
 
 button {
-  background: #602424;
+  background: #73051f;
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 10px 18px;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -58,13 +65,34 @@ button {
 }
 
 button:hover {
-  background: #c26696;
+  background: #6a11cb;
   transform: scale(1.05);
 }
 
-#result {
-  margin-top: 20px;
+p {
+  margin-top: 15px;
   font-size: 18px;
-  color: #444;
   font-weight: bold;
+  color: #444;
+}
+h3{
+  color: white;
+  margin-bottom: 20px;
+  font-size: 30px;
+
+}
+input[type="text"] {
+  padding: 10px;
+  width: 90%;
+  border: 2px solid #5b1e0a;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #6a11cb;
+  box-shadow: 0px 0px 8px rgba(106, 17, 203, 0.5);
 }

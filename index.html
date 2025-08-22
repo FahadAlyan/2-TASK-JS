@@ -10,6 +10,7 @@
   <h1>Converters</h1>
 
   <!-- Task 1: Age to Days -->
+   <h3>QUESTION NO:1</h3>
   <div class="box">
     <h2>Age → Days Converter</h2>
     <label for="age">Enter your age (in years):</label>
@@ -19,6 +20,7 @@
   </div>
 
   <!-- Task 2: Hours to Seconds -->
+  <h3>QUESTION NO:2</h3>
   <div class="box">
     <h2>Hours → Seconds Converter</h2>
     <label for="hours">Enter hours:</label>
@@ -30,6 +32,7 @@
   <h3>Next Number Finder</h3>
 
 <!-- Task 3 : scenorio 1-->
+   <h3>QUESTION NO:3 (Part A)</h3>
   <div class="box">
     <h2> Next Number in Array</h2>
     <p>Array = [10, 20, 30, 40, 50]</p>
@@ -39,26 +42,33 @@
     <p id="arrayResult"></p>
   </div>
 <!-- Task 4: Next Number (Integer or Float) -->
-  <div class="box">
-  <h2> Next Number (Integer or Float)</h2>
-  <label for="userInput">Enter any number (integer or float):</label>
-  <input type="number" id="userInput" placeholder="Enter a number">
-  <button onclick="checkUser()">Find Next</button>
-  <p id="userResult"></p>
-</div>
-
-<!-- Task 5: Capitalize Name -->
-  <div class="box">
-    <h2>Task 5: Capitalize Name</h2>
-    <label for="nameInput">Enter your name (lowercase only):</label>
-    <input type="text" id="nameInput" placeholder="Enter name">
-    <button onclick="capitalizeName()">Capitalize</button>
-    <p id="nameResult"></p>
+ <h3>( Part B )</h3>
+ <div class="box">
+    <h2>Next Number (Integer or Float)</h2>
+    <label for="userInput">Enter any number (integer or float):</label>
+    <input type="text" id="userInput" placeholder="e.g. 12 or 12.1">
+    <button onclick="checkUser()">Find Next</button>
+    <p id="userResult"></p>
   </div>
 
+
+<!-- Task 5: Capitalize Name -->
+
+<h3>QUESTION NO:4</h3>
+  <div class="box">
+  <h2>Capitalize Name</h2>
+  <label for="nameInput">Enter your name (lowercase only):</label>
+  <input type="text" id="nameInput" placeholder="Enter name in lower case">
+  <button onclick="capitalizeName()">Capitalize</button>
+  <p id="nameResult"></p>
+</div>
+
+
+
   <!-- Task 6: BMI Calculator -->
+<h3>QUESTION NO:5</h3>
 <div class="box">
-  <h2>Task 6: BMI Calculator</h2>
+  <h2>BMI Calculator</h2>
   <label for="weight">Enter your weight (kg):</label>
   <input type="number" id="weight" placeholder="Enter weight">
 
@@ -67,6 +77,16 @@
 
   <button onclick="calculateBMI()">Calculate BMI</button>
   <p id="bmiResult"></p>
+</div>
+
+  <!-- Task 6: First & Last Element of Random Array -->
+<h3>QUESTION NO:6</h3>
+<div class="box">
+  <h2> First & Last Element of Random Array</h2>
+  <button onclick="generateArray()">Generate Array</button>
+  <p id="arrayDisplay"></p>
+  <button onclick="pickFirstLast()">Pick First & Last</button>
+  <p id="firstLastResult"></p>
 </div>
 
 

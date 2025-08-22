@@ -21,15 +21,12 @@ function convertToSeconds() {
     document.getElementById("hoursResult").innerText = " Please enter valid hours!";
     return;
   }
-
   const seconds = hours * 3600;
   document.getElementById("hoursResult").innerText = hours + " hours = " + seconds + " seconds";
 }
 // Task 3: Next Number in Array
 
-
 const numbers = [10, 20, 30, 40, 50];
-
 function findNextInArray(arr,num) {
   const index = arr.indexOf(num);
   if (index === -1) {
@@ -45,30 +42,51 @@ function checkArray() {
   const result = findNextInArray(numbers, value);
   document.getElementById("arrayResult").innerText =   result;
 }
+
 // Task 4 :
-
-function findNextNumber(input) {
-  const number = Number(input);
-  if (isNaN(number)) return "Please enter a valid number";
-  return number + 1;
-}
-
 function checkUser() {
-  const value = document.getElementById("userInput").value;
-  const result = findNextNumber(value);
-  document.getElementById("userResult").innerText =   result;
-}
-// Task 5: Capitalize Name
+  let value = document.getElementById("userInput").value;
+  let num = Number(value);
 
-function capitalizeName() {
-  const name = document.getElementById("nameInput").value;
-  if (!name) {
-    document.getElementById("nameResult").innerText = "Please enter your name!";
+  if (isNaN(num)) {
+    document.getElementById("userResult").innerText = "Please enter a valid number!";
     return;
   }
-  const capitalized = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-  document.getElementById("nameResult").innerText =  capitalized;
+
+  let next;
+
+  if (Number.isInteger(num)) {
+    next = num + 1;
+  } else {
+    next = Math.round((num + 0.1) * 10) / 10;
+  }
+
+  document.getElementById("userResult").innerText = next;
 }
+
+
+
+// Task: Capitalize full name (first, middle, last)
+
+function capitalizeName() {
+  let name = document.getElementById("nameInput").value;   
+
+  if (name == "") {
+    document.getElementById("nameResult").innerText = "Please enter name!";
+    return;
+  }
+  let parts = name.split(" ");  
+  for (let i = 0; i < parts.length; i++) {
+    if (parts[i].length > 0) {
+      parts[i] = parts[i][0].toUpperCase() + parts[i].substring(1).toLowerCase();
+    }
+  }
+  let finalName = parts.join(" ");  
+  document.getElementById("nameResult").innerText = finalName;
+}
+
+
+
 
 // Task 6: BMI Calculator
 function calculateBMI() {
@@ -81,5 +99,26 @@ function calculateBMI() {
   const bmi = weight / (height * height);
   document.getElementById("bmiResult").innerText = "Your BMI is: " + bmi.toFixed(2);
 }
+
+// Task 6: First & Last Element of Random Array
+let arr = [];  
+function generateArray() {
+  arr = []; 
+  for (let i = 0; i < 5; i++) {
+    let num = Math.floor(Math.random() * 100) + 1; 
+    arr.push(num);
+  }
+  document.getElementById("arrayDisplay").innerText = "Array: " + arr;
+}
+function pickFirstLast() {
+  if (arr.length == 0) {
+    document.getElementById("firstLastResult").innerText = "Please generate array first!";
+  } else {
+    let first = arr[0];
+    let last = arr[arr.length - 1];
+    document.getElementById("firstLastResult").innerText = "First: " + first + "  Last: " + last;
+  }
+}
+
 
 

@@ -119,6 +119,28 @@ function pickFirstLast() {
     document.getElementById("firstLastResult").innerText = "First: " + first + "  Last: " + last;
   }
 }
+// Task 7: Addition of Two Numbers
+
+let firstNumberBox = document.getElementById("firstNum");
+let secondNumberBox = document.getElementById("secondNum");
+let resultBox = document.getElementById("result");
+firstNumberBox.addEventListener("input", calculateSum);
+secondNumberBox.addEventListener("input", calculateSum);
+function calculateSum() {
+  let firstValue = firstNumberBox.value;
+  let secondValue = secondNumberBox.value;
+  if (firstValue !== "" && secondValue === "") {
+    resultBox.value = "NaN";
+  }
+  else if (firstValue !== "" && secondValue !== "") {
+    let sum = Number(firstValue) + Number(secondValue);
+    resultBox.value = sum;
+  }
+  else {
+    resultBox.value = "";
+  }
+}
+
 
 
 
